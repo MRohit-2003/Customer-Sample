@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ChatWidget from "./Components/ChatWidget";
 
 function App() {
+  const widgetId = process.env.REACT_APP_WIDGET_ID || 'w_100';
+  const serverUrl = process.env.REACT_APP_API_BASE_URL || 'https://nirvista-customer-care.onrender.com';
+
   return (
     <Router>
       <Routes>
