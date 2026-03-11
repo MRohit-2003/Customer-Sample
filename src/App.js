@@ -11,6 +11,14 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/payments" element={<Payments />} />
       </Routes>
+  {/* Chat Widget - Only show on public pages or for testing */}
+            <ChatWidget
+                widgetId={widgetId}
+                serverUrl={serverUrl}
+                primaryColor="#0b7d7b"
+                welcomeMessage="Hi! How can we help you today?"
+                position="bottom-right"
+            />
     </Router>
   );
 }
