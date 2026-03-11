@@ -2,6 +2,7 @@ import Home from "./Pages/Home";
 import Payments from "./Pages/Payments";
 import Services from "./Pages/Services";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ChatWidget from "./Components/ChatWidget";
 
 function App() {
   return (
